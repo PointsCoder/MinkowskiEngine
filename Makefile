@@ -8,7 +8,7 @@ Q ?= @
 # CPU_ONLY := 1
 
 CXX ?= g++
-PYTHON ?= python
+PYTHON = ~/anaconda3/envs/isaacsim/bin/python
 
 EXTENSION_NAME := minkowski
 
