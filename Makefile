@@ -8,7 +8,7 @@ Q ?= @
 # CPU_ONLY := 1
 
 CXX ?= g++
-PYTHON = ~/anaconda3/envs/isaacsim/bin/python
+PYTHON = ~/anaconda3/envs/isaacsim/bin/python # Note(Jiageng): change this to your python env path
 
 EXTENSION_NAME := minkowski
 
@@ -59,7 +59,7 @@ endif
 ifneq ($(CPU_ONLY), 1)
 	# CUDA ROOT DIR that contains bin/ lib64/ and include/
 	# CUDA_HOME := /usr/local/cuda
-	
+
 	NVCC ?= $(CUDA_HOME)/bin/nvcc
 	INCLUDE_DIRS += ./ $(CUDA_HOME)/include
 	LIBRARY_DIRS += $(CUDA_HOME)/lib64
